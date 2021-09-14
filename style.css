@@ -1,0 +1,31 @@
+#heading {
+    font-size: 25px;
+}
+
+#pic:hover {
+  background-color: floralwhite;
+  color:indigo;
+  border-color: indigo;
+}
+
+canvas {
+    border-width: 5px;
+    border-radius:10px;
+
+    animation-name:Shadow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Shadow {
+    from {
+        box-shadow:10px 10px 40px indigo;
+        border-style: solid;
+        border-color: cyan;
+    }
+    to{
+        box-shadow: -10px -10px 50px cyan;
+        border-style: double;
+        border-color:indigo;
+    }
+}
